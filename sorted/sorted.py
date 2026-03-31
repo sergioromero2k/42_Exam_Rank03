@@ -11,7 +11,8 @@ def main() -> None:
             self.name = name
             self.grade = grade
 
-    sorted_students = [Student("Ana", 8), Student("Luis", 6), Student("Marta", 9)]
+    sorted_students = [
+        Student("Ana", 8), Student("Luis", 6), Student("Marta", 9)]
 
     print(sorted(words, key=lambda x: len(x)))
     print(sorted(students, key=lambda x: x[1], reverse=True))
