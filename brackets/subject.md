@@ -1,12 +1,19 @@
 # Brackets
 ---
 
-Write a function brackets(s) that takes a string as argument and returns True if all the brackets in the string are correctly closed and nested, False otherwise. Valid bracket pairs are (), [] and {}. Non-bracket characters must be ignored.
+Write a function:
+```
+def brackets(s: str) -> bool:
+```
+that takes a string s and returns True if all brackets in the string are correctly matched, properly nested, and closed, and False otherwise.
 
 ```
-brackets("()")        → True
-brackets("([{}])")    → True
-brackets("(]")        → False
-brackets("([)")       → False
-brackets("a(b[c]d)")  → True
+brackets("()")               → True
+brackets("([{}])")           → True
+brackets("(]")               → False
+brackets("([)")              → False
+brackets("a(b[c]d)")         → True
+brackets("[{adaudna}]")      → True
+brackets("[{adaudna}])")     → False
+brackets("abc{[123(xyz)]}")  → True
 ```
