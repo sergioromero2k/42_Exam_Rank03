@@ -1,83 +1,48 @@
 # Exam - Python Common Core
 
-Practice exercises for the **Milestone 3** exam at 42. 
-Each folder contains the subject and a Python solution.
+A collection of common Milestone 3 (Rank 03) exam exercises from the 42 Common Core, implemented in Python. This repository is designed to help you practice problem-solving, string manipulation, data structures, and core algorithms similar to those found in the actual exam.
 
 ---
 
-## Structure
+## Project Structure
 
 ```
 42_Exam_Rank03/
+├── alternate_case/
 ├── atoi/
-│   ├── atoi.py
-│   └── subject.md
 ├── brackets/
-│   ├── brackets.py
-│   └── subject.md
+├── capitalize_words/
 ├── convert_base/
-│   ├── conver_base.py
-│   └── conver_base.md
+├── merge_and_sort_desc/
 ├── mirror_matrix/
-│   ├── mirror_matrix.py
-│   └── subject.md
-└── sorted/
-    └── sorted.py
-    └── subject.md
-
+├── mirror_matrix_vertical/
+├── rotate_90/
+├── sorted/
+├── valid_anagram/
+├── valid_palindrome/
+├── whisper_lipher/
+└── README.md
 ```
-
+Each folder contains:
+*.py → Python implementation
+* subject.md / subject_EN.md / subject_ES.md → exercise description
 ---
 
 ## Exercises
 
-### `brackets`
-Validates whether all brackets in a string are correctly closed and nested.  
-Supports `()`, `[]` and `{}`. Non-bracket characters are ignored.
-```
-brackets("([{}])")  → True
-brackets("(]")      → False
-```
-
----
-
-### `atoi`
-Converts a string to an integer without using `int()`.  
-Handles leading whitespace, optional sign, and stops at the first non-digit character.
-```
-atoi("  -42abc")  → -42
-atoi("+123")      → 123
-```
-
----
-
-### `convert_base`
-Converts a number represented as a string from one base to another.
-```
-convert_base("ff", 16, 2)  → "11111111"
-convert_base("10", 2, 10)  → "2"
-```
-
----
-
-### `mirror_matrix`
-Returns a new 2D list mirrored horizontally (each row reversed).  
-The original matrix is never modified.
-```
-[[1,2,3],    →    [[3,2,1],
- [4,5,6],          [6,5,4],
- [7,8,9]]          [9,8,7]]
-```
-
----
-
-### `sorted`
-Sorting lists of strings, tuples, or objects using `sorted()` with `key=lambda`.  
-Covers single criteria, reverse order, and multi-criteria sorting via tuples.
-```python
-sorted(["banana", "kiwi", "fig"], key=lambda x: len(x))
-→ ["fig", "kiwi", "banana"]
-```
+* ``atoi``- Convert a string to an integer without using int().
+* ``alternate_case`` - Alternate uppercase and lowercase characters in a string.
+* ``capitalize_words`` - Capitalize the first letter of each word.
+* ``valid_palindrome``- Check if a string is a palindrome (ignoring spaces and symbols).
+* ``valid_anagram`` - Check if two strings are anagrams.
+* ``brackets``- Validate whether brackets are correctly balanced.
+* ``convert_base``- Convert a number (as a string) from one base to another.
+* ``sorted``- Using sorted() with key=lambda.
+* ``merge_and_sort_desc`` - Merge lists and sort them in descending order.
+* ``mirror_matrix`` - Return a horizontally mirrored matrix.
+* ``mirror_matrix_vertical`` - Return a vertically mirrored matrix.
+* ``rotate_90``- Rotate a matrix 90 degrees.
+* ``whisper_lipher``- Different implementations of a custom "whisper" cipher.
 
 ---
 
