@@ -1,4 +1,4 @@
-# Valid Palindrome
+# py_echo_validator
 ---
 Write a function:
 ```
@@ -11,8 +11,8 @@ Returns False otherwise.
 
 ### Examples
 ```
-valid_palindrome("Was it a car or a cat I saw?") → True
-valid_palindrome("tab a cat")                     → False
-valid_palindrome("A man, a plan, a canal: Panama") → True
-valid_palindrome("No lemon, no melon")           → True
+py_echo_validator("Was it a car or a cat I saw?") → True
+py_echo_validator("tab a cat")                     → False
+py_echo_validator("A man, a plan, a canal: Panama") → True
+py_echo_validator("No lemon, no melon")           → True
 ```
