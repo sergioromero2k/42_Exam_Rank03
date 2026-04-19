@@ -2,14 +2,14 @@
 ---
 Write a function:
 ```
-def valid_palindrome(s: str) -> bool:
+def py_echo_validator(s: str) -> bool:
 ```
 Returns True if s is a palindrome, ignoring:
     * Case (uppercase/lowercase)
     * Non-alphanumeric characters
 Returns False otherwise.
 
-#### Examples
+### Examples
 ```
 valid_palindrome("Was it a car or a cat I saw?") → True
 valid_palindrome("tab a cat")                     → False
